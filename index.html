@@ -77,6 +77,113 @@
             </div>
         </section>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // Overlay Animations
+        TweenMax.to('.first', 1.5, {
+            delay: 0.2,
+            top: '-100%',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to('.second', 1.5, {
+            delay: 0.4,
+            top: '-100%',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to('.third', 1.5, {
+            delay: 0.6,
+            top: '-100%',
+            ease: Expo.easeInOut
+        });
+
+        // Header Animations
+        TweenMax.from('.logo img', 1.5, {
+            delay: 1,
+            y: '-150',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from('nav ul li a', 1.5, {
+            delay: 1.4,
+            y: '-150',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.basket', 1.5, {
+            delay: 1.8,
+            y: '-150',
+            ease: Expo.easeInOut
+        });
+
+        //Product Animations
+        TweenMax.from('.product h1 .hide', 1.5, {
+            delay: 2,
+            y: '100%',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.product h3 .hide', 1.5, {
+            delay: 2.4,
+            y: '100%',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.product p .hide', 1.5, {
+            delay: 2.8,
+            y: '100%',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.product h2 .hide', 1.5, {
+            delay: 3,
+            y: '100%',
+            ease: Expo.easeInOut
+        });
+        // Animation of the button
+        TweenMax.from('.product .btn a', 1.5, {
+            delay: 2.4,
+            y: '-70',
+            ease: Expo.easeInOut
+        });
+
+        // Product Display Animations
+        TweenMax.from('.doritos', 1.5, {
+            delay: 2.5,
+            y: '-150',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.chips', 1.5, {
+            delay: 2.4,
+            x: '200%',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.ketchup', 1.5, {
+            delay: 2.8,
+            y: '200%',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.chilli', 1.5, {
+            delay: 3,
+            y: '200%',
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.backdrop', 1.5, {
+            delay: 1.8,
+            opacity: 0,
+            y: '200%',
+            ease: Expo.easeInOut
+        });
+    </script>
 </body>
 
 </html>
